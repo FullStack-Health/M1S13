@@ -5,10 +5,6 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 
 export const routes: Routes = [
   {
-    path: '',
-    component: LoginComponent
-  },
-  {
     path: 'login',
     component: LoginComponent
   },
@@ -19,5 +15,9 @@ export const routes: Routes = [
   {
     path: 'cadastro',
     component: CadastroComponent
+  },
+  {
+    path: '**',
+    redirectTo: 'login'
   },
 ];
