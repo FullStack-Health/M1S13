@@ -1,0 +1,39 @@
+@import '../../assets/styles/mixins';
+
+.cadastro {
+  width: 100%;
+  @include d-flex-center;
+
+  form {
+    border: 1px solid;
+    border-radius: 6px;
+    margin: 10%;
+    padding: 22px 32px;
+    @include box-shadow;
+
+    .elemento-formulario {
+      display: flex;
+      flex-direction: column;
+
+      & + .elemento-formulario {
+        margin-top: 8px;
+      }
+    }
+
+    .erro-formulario {
+      label, span {
+        color: red;
+      }
+
+      input {
+        border-color: red;
+      }
+    }
+
+    .botoes-formulario {
+      margin-top: 16px;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}

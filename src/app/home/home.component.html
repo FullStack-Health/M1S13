@@ -1,0 +1,12 @@
+<div class="home">
+
+  <div class="pesquisar">
+    <input type="text" [(ngModel)]="textoPesquisa">
+    <button (click)="pesquisar()">Procurar</button>
+  </div>
+
+  <div class="lista-cards">
+    <app-card *ngFor="let produto of listaProdutosFiltro" [item]="produto"></app-card>
+  </div>
+
+</div>

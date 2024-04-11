@@ -1,0 +1,9 @@
+<div
+  class="sidebar"
+  [ngClass]="{expanded: expandido}"
+>
+  <p>sidebar works!</p>
+  <button (click)="expandido = !expandido">
+    {{ expandido ? "<<" : ">>" }}
+  </button>
+</div>

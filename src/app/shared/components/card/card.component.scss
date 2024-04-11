@@ -1,0 +1,24 @@
+@import '../../../../assets/styles/variables';
+@import '../../../../assets/styles/mixins';
+
+.card {
+  border: 1px solid $colorPrimary;
+  border-radius: 6px;
+  padding: 16px 8px;
+  width: 100%;
+  flex-direction: column;
+  @include box-shadow;
+  @include d-flex-center;
+
+  &:hover {
+    @include hover;
+  }
+}
+
+img {
+  width: 115px;
+}
+
+span {
+  margin-top: 16px;
+}

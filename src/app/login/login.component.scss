@@ -1,0 +1,47 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixins';
+
+.login {
+  @include d-flex-center;
+  width: 100%;
+
+  form {
+    border: 1px solid;
+    border-radius: 6px;
+    margin: 10%;
+    padding: 22px 32px;
+    @include box-shadow;
+
+    .elemento-formulario {
+      display: flex;
+      flex-direction: column;
+
+      & + .elemento-formulario {
+        margin-top: 8px;
+      }
+    }
+
+    .botoes-formulario {
+      margin-top: 16px;
+      display: flex;
+      justify-content: space-around;
+
+      button {
+        height: 24px;
+        width: 72px;
+        cursor: pointer;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 4px;
+
+        &:hover {
+          @include hover;
+        }
+      }
+
+      .entrar {
+        background-color: lightblue;
+      }
+    }
+  }
+}
